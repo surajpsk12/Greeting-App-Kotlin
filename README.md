@@ -9,9 +9,9 @@ It demonstrates basic Android UI elements, user input handling, and dynamic cont
 ## Preview
 
 <p align="center">
-  <img src="screenshot1.png" alt="Home" width="250px"/>
-  <img src="screenshot2.png" alt="Text Input" width="250px"/>
-  <img src="screenshot3.png" alt="Result" width="250px"/>
+  <img src="https://github.com/user-attachments/assets/81b8b91b-3df2-4d6e-86f2-c53925d16662" alt="Home" width="250px"/>
+  <img src="https://github.com/user-attachments/assets/73bc79ea-e65e-4fea-8101-b1cd80d03361" alt="Text Input" width="250px"/>
+  <img src="https://github.com/user-attachments/assets/59fd7078-6d84-4d65-85fa-ae2f36d9b888" alt="Result" width="250px"/>
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@ It demonstrates basic Android UI elements, user input handling, and dynamic cont
 ## Setup and Installation
 
 ```bash
-git clone <your-repository-url>
+git clone [<your-repository-url>](https://github.com/surajpsk12/Greeting-App-Kotlin.git)
 ````
 
 1. Open Android Studio.
