@@ -15,7 +15,7 @@ It demonstrates basic Android UI elements, user input handling, and dynamic cont
 </p>
 
 <p align="center">
-  <b>Home</b>    <b>Text Input</b>    <b>Result</b>
+  <b>Home</b>                                 <b>Text Input</b>                          <b>Result</b>
 </p>
 
 ## Features
