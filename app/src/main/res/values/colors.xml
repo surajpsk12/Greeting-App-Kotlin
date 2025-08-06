@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- New colors for the beautiful UI -->
+    <color name="primary_blue">#3498DB</color>
+    <color name="primary_dark_blue">#2980B9</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="gradient_start">#E3F2FD</color>
+    <color name="gradient_center">#BBDEFB</color>
+    <color name="gradient_end">#90CAF9</color>
 </resources>

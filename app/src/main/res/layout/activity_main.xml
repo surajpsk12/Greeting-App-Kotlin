@@ -15,8 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Our App"
-        android:textColor="#2C3E50"
-        android:textSize="32sp"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/title_text_size"
         android:textStyle="bold"
         android:fontFamily="sans-serif-medium"
         android:letterSpacing="0.02"
@@ -37,9 +37,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="@dimen/card_corner_radius"
         app:cardElevation="8dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="@color/card_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -48,84 +48,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/card_padding">
 
-            <!-- Name Input with Material Design styling -->
-            <com.google.android.material.textfield.TextInputLayout
+            <!-- Name Input with enhanced styling -->
+            <EditText
+                android:id="@+id/edittext_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
                 android:layout_marginBottom="16dp"
-                app:boxBackgroundMode="outline"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxStrokeColor="#3498DB"
-                app:hintTextColor="#3498DB"
-                app:startIconDrawable="@drawable/ic_person"
-                app:startIconTint="#3498DB">
+                android:hint="Enter Your Name"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/body_text_size"
+                android:fontFamily="sans-serif"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp" />
 
-                <EditText
-                    android:id="@+id/edittext_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="    Enter Your Name"
-                    android:textColor="#2C3E50"
-                    android:textSize="16sp"
-                    android:fontFamily="sans-serif"
-                    android:inputType="textPersonName"
-                    android:maxLines="1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Language Preference Input with Material Design styling -->
-            <com.google.android.material.textfield.TextInputLayout
+            <!-- Language Preference Input with enhanced styling -->
+            <EditText
+                android:id="@+id/editText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
                 android:layout_marginBottom="24dp"
-                app:boxBackgroundMode="outline"
-                app:boxCornerRadiusTopStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxStrokeColor="#3498DB"
-                app:hintTextColor="#3498DB"
-                app:startIconDrawable="@drawable/ic_code"
-                app:startIconTint="#3498DB">
+                android:hint="What language do you prefer, Java or Kotlin"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/body_text_size"
+                android:fontFamily="sans-serif"
+                android:inputType="text"
+                android:maxLines="2"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:drawableStart="@drawable/ic_code"
+                android:drawablePadding="12dp" />
 
-                <EditText
-                    android:id="@+id/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="     What language do you prefer, Java or Kotlin"
-                    android:textColor="#2C3E50"
-                    android:textSize="16sp"
-                    android:fontFamily="sans-serif"
-                    android:inputType="text"
-                    android:maxLines="2" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Enhanced Button with gradient and ripple effect -->
-            <com.google.android.material.button.MaterialButton
+            <!-- Enhanced Button with custom gradient background -->
+            <Button
                 android:id="@+id/buttonhello"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:text="Say Hello!"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textSize="@dimen/button_text_size"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-medium"
                 android:letterSpacing="0.02"
-                app:backgroundTint="#3498DB"
-                app:cornerRadius="28dp"
-                app:rippleColor="#FFFFFF"
-                app:strokeWidth="0dp"
-                app:icon="@drawable/ic_waving_hand"
-                app:iconTint="#FFFFFF"
-                app:iconGravity="textStart"
-                app:iconPadding="8dp"
-                android:elevation="4dp" />
+                android:background="@drawable/button_ripple"
+                android:elevation="4dp"
+                android:stateListAnimator="@null" />
 
         </LinearLayout>
 
@@ -138,7 +110,7 @@
         android:layout_marginTop="32dp"
         app:cardCornerRadius="110dp"
         app:cardElevation="12dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="@color/card_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -149,7 +121,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:background="#F8F9FA" />
+            android:background="@color/background_light" />
 
     </androidx.cardview.widget.CardView>
 
