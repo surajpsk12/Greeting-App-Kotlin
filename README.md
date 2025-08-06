@@ -39,7 +39,7 @@ It demonstrates basic Android UI elements, user input handling, and dynamic cont
 ## Setup and Installation
 
 ```bash
-git clone [<your-repository-url>](https://github.com/surajpsk12/Greeting-App-Kotlin.git)
+git clone https://github.com/surajpsk12/Greeting-App-Kotlin.git
 ````
 
 1. Open Android Studio.
